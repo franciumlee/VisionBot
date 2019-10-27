@@ -1,8 +1,14 @@
 import ctypes
 import sys
 
-libiq = ctypes.CDLL("iq-neuron/build/libiq-network.so")
-libiz = ctypes.CDLL("iq-neuron/build/libiz-network.so")
+#libiq = ctypes.CDLL("iq-neuron/build/libiq-network.so")
+#libiz = ctypes.CDLL("iq-neuron/build/libiz-network.so")
+
+libiq = ctypes.cdll.LoadLibrary("D:\\Coding\\MS_Project\\VisionBot\\eval\\iq-neuron\\build\\Debug\\iq-network.dll")
+libiz = ctypes.cdll.LoadLibrary("D:\\Coding\\MS_Project\\VisionBot\\eval\\iq-neuron\\build\\Debug\\iz-network.dll")
+
+
+
 
 class iqnet(object):
     def __init__(self):
