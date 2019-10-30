@@ -1,5 +1,6 @@
 import sys
-sys.path.append("iq-neuron")
+sys.path.append("D:\\Coding\\MS_Project\\VisionBot\\eval\\iq-neuron")
+#from iq-neuron import iqif
 import iqif
 
 class SNN:
